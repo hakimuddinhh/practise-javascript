@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    --field-spacing: 40px;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--field-spacing)
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-field-error {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    background: #ff3c3c;
+    color: white;
+    padding: 5px 7px;
+    border-radius: 4px;
+}
+
+.photos-container {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
